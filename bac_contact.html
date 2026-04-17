@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BAC | Contact</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="bac_site.css">
+</head>
+<body>
+<div class="page-shell">
+  <header class="site-header">
+    <div class="container nav-bar">
+      <a class="brand" href="bac_apple_level_redesign.html"><span class="brand-mark">BAC</span><span class="brand-line">The World&apos;s Cooling Partner • Since 1938</span></a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" data-nav-toggle><span></span></button>
+      <div class="nav-wrap">
+        <ul class="nav-list">
+          <li class="nav-item no-menu"><a class="nav-link" href="bac_products.html">Products</a></li>
+          <li class="nav-item no-menu"><a class="nav-link" href="bac_parts.html">Parts</a></li>
+          <li class="nav-item no-menu"><a class="nav-link" href="bac_resources.html">Resources</a></li>
+          <li class="nav-item no-menu"><a class="nav-link" href="bac_about.html">About</a></li>
+          <li class="nav-item no-menu"><a class="nav-link" href="bac_careers.html">Careers</a></li>
+        </ul>
+        <div class="header-cta"><a class="btn-pill btn-primary" href="bac_contact.html">Speak to an Expert</a></div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="page-hero">
+      <div class="container page-hero-grid">
+        <div>
+          <p class="section-label">Contact BAC</p>
+          <h1 class="page-title">Representative inquiry and existing-equipment support.</h1>
+          <p class="page-copy">This contact flow is deeper and closer to a real BAC inquiry experience. It handles new-equipment requests, documentation needs, and existing-equipment routing in one place.</p>
+        </div>
+        <aside class="side-panel">
+          <h3>Use This Form For</h3>
+          <ul class="stack-list">
+            <li><strong>New Equipment</strong> Product guidance and representative contact.</li>
+            <li><strong>Documentation</strong> Manual and technical-content requests.</li>
+            <li><strong>Existing Equipment</strong> Parts, inspection, maintenance, and service support.</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container split-section">
+        <div class="card">
+          <h3 id="contact-form">Representative Form</h3>
+          <form class="form-grid" data-contact-form>
+            <div class="form-row">
+              <label>First Name<input type="text" name="first_name" required></label>
+              <label>Last Name<input type="text" name="last_name" required></label>
+            </div>
+            <div class="form-row">
+              <label>Company<input type="text" name="company"></label>
+              <label>Country<input type="text" name="country" required></label>
+            </div>
+            <div class="form-row">
+              <label>State / Province<input type="text" name="state"></label>
+              <label>Postal Code<input type="text" name="postal_code"></label>
+            </div>
+            <div class="form-row">
+              <label>Email Address<input type="email" name="email" required></label>
+              <label>Phone Number<input type="tel" name="phone"></label>
+            </div>
+            <div class="form-row">
+              <label>Project Type<select name="project_type"><option>New Equipment</option><option>Parts / Inspection</option><option>Documentation Request</option><option>General Inquiry</option></select></label>
+              <label>Inquiry Type<select name="inquiry_type" data-inquiry-type><option value="new-equipment">New Equipment</option><option value="parts-inspection">Parts / Inspection</option><option value="documentation">Documentation Request</option><option value="general">General Inquiry</option></select></label>
+            </div>
+            <div class="form-row">
+              <label>Market Type<select name="market_type"><option>HVAC</option><option>Refrigeration</option><option>Power / Process</option><option>Manufacturing</option><option>Data Center</option></select></label>
+              <label>Preferred Contact Method<select name="contact_method"><option>Email</option><option>Phone</option></select></label>
+            </div>
+            <div class="form-stack hidden" data-equipment-section id="existing-equipment">
+              <h4 class="form-section-title">Existing Equipment Details</h4>
+              <div class="form-row">
+                <label>Equipment Manufacturer<select name="manufacturer" data-manufacturer><option value="bac">BAC</option><option value="evapco">Evapco</option><option value="spx">SPX / Marley</option><option value="other">Other</option></select></label>
+                <label class="hidden" data-other-manufacturer>Other Manufacturer<input type="text" name="other_manufacturer"></label>
+              </div>
+              <div class="form-row">
+                <label>Model Number<input type="text" name="model_number"></label>
+                <label>Serial Number<input type="text" name="serial_number"></label>
+              </div>
+              <div class="form-row">
+                <label>Site / Facility<input type="text" name="site"></label>
+                <label>Requested Support<select name="requested_support"><option>Replacement Parts</option><option>Inspection</option><option>Maintenance Support</option><option>Upgrade / Retrofit</option></select></label>
+              </div>
+            </div>
+            <label>More Information<textarea name="message" placeholder="Tell BAC about your project, equipment, or support need." required></textarea></label>
+            <button class="btn-pill btn-primary" type="submit">Submit Inquiry</button>
+            <div class="success-banner" data-form-success>Thanks. This static prototype captured the inquiry flow and is ready to connect to a real submission backend.</div>
+          </form>
+        </div>
+        <div class="card">
+          <h3>Support Guidance</h3>
+          <p>The deeper contact flow is designed to route existing-equipment and documentation requests more accurately than the earlier homepage form.</p>
+          <ul class="stack-list">
+            <li><strong>New Equipment</strong> Best for early product-family help or representative connection.</li>
+            <li><strong>Documentation Request</strong> Best for manuals and technical reference requests.</li>
+            <li><strong>Existing Equipment</strong> Use model, serial, and manufacturer fields when available.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer"><div class="container footer-bar"><span class="footer-copy">&copy; 2026 Baltimore Aircoil Company, Inc.</span><div class="footer-links"><a href="bac_apple_level_redesign.html">Home</a><a href="bac_products.html">Products</a><a href="bac_parts.html">Parts</a><a href="bac_resources.html">Resources</a></div></div></footer>
+</div>
+<script src="bac_site.js"></script>
+</body>
+</html>
